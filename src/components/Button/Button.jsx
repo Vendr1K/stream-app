@@ -10,11 +10,11 @@ export const Button = (props) => {
     href,
     target,
     /**
-     * '' (default) | 'transparent'
+     * '' (default) | 'transparent' | 'black-10'
      */
     mode = "",
     label,
-    isLabelVisible = false,
+    isLabelHidden = false,
     iconName,
     /**
      * 'before' | 'after'
@@ -28,7 +28,7 @@ export const Button = (props) => {
   const linkProps = { href, target }
   const buttonProps = { type }
   const specificProps = isLink ? linkProps : buttonProps
-  const title = isLabelVisible ? label : undefined
+  const title = isLabelHidden ? label : undefined
   const iconComponent = iconName && (
     <Icon className="button__icon" name={iconName} hasFill={hasFillIcon} />
   )
@@ -43,7 +43,7 @@ export const Button = (props) => {
       {...specificProps}
     >
       {iconPosition === "before" && iconComponent}
-      {!isLabelVisible && <span className="button__label">{label}</span>}
+      {!isLabelHidden && <span className="button__label">{label}</span>}
       {iconPosition === "after" && iconComponent}
     </Component>
   )

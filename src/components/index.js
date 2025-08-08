@@ -1,3 +1,5 @@
 export { Logo } from "./Logo/Logo"
 export { Button } from "./Button/Button"
 export { Icon } from "./Icon/Icon"
+export { BurgerButton } from "./BurgerButton/BurgerButton"
+export { Socials } from "./Socials/Socials"
