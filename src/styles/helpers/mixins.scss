@@ -68,9 +68,9 @@
 }
 
 @mixin focus-visible {
-  outline: 2px dashed var(--color-white);
+  outline: 2px solid var(--color-white);
+  border-radius: var(--border-radius-s);
   outline-offset: 4px;
-  transition-duration: 0s !important;
 }
 
 @mixin disabled {
