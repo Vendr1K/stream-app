@@ -1,3 +1,4 @@
-import OverlayMenu from "@/modules/OverlayMenu"
+import { OverlayMenu, SliderCollection } from "@/modules"
 
 new OverlayMenu()
+new SliderCollection()

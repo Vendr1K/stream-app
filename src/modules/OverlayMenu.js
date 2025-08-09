@@ -1,4 +1,4 @@
-class OverlayMenu {
+export class OverlayMenu {
   selectors = {
     root: "[data-js-overlay-menu]",
     dialog: "[data-js-overlay-menu-dialog]",
@@ -30,5 +30,3 @@ class OverlayMenu {
     this.burgerButtonElement.addEventListener("click", this.onBurgerButtonClick)
   }
 }
-
-export default OverlayMenu
