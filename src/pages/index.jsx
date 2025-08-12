@@ -1,4 +1,4 @@
-import { Hero, Categories } from "@/sections"
+import { Hero, Categories, Devices } from "@/sections"
 
 export const metadata = {
   title: "Home",
@@ -10,6 +10,7 @@ export default function () {
     <>
       <Hero />
       <Categories />
+      <Devices />
     </>
   )
 }
